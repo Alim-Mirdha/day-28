@@ -1,0 +1,278 @@
+/*############ defult css ############*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body,h1,h2,h3,h4,h5,h6,p,a,span,button{
+    font-family: 'Work Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    padding: 0;
+    margin: 0
+}
+ul li{
+    list-style: none;
+}
+input:focus{
+    box-shadow: none;
+}
+
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.clear-fix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.flot-left{
+    float: left;
+}
+.flot-right{
+    float: right;
+}
+.dufolt-btn {
+    padding: 20px 34px;
+    margin-right: 36px;
+    display: inline-block;
+    font-size: 20.8px;
+    background-color: #fcfcfc;
+    border-color: 1px solid #fcfcfc;
+    color: #7d7d7d;
+    font-weight: 500;
+    border-radius: 8px;
+}
+/*############ defult css end ############*/
+/*############ header area start ############*/
+.header {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding: 10px 0px;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+}
+.header-logo{
+    width: 30%;
+}
+.header-menu{
+    width: 60%;
+}
+.header-button{
+    width: 10%;
+}
+
+
+.header-logo img {
+    width: 45px;
+    float: left;
+}
+.header-logo span {
+    color: #010101;
+    font-size: 26px;
+    margin-left: 7px;
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 5px;
+    transition: .5s;
+}
+
+.header-logo span:hover{
+    color: #cccccc;
+}
+.main-menu ul li {
+    display: inline-block;
+    margin-left: -4px;
+    position: relative;
+}
+.main-menu ul li a {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 45px;
+    padding: 0 15px;
+    color: #010101;
+}
+.main-menu ul li a:hover{
+    color:#6278df;
+}
+
+.header-button a {
+    display: inline-block;
+    border: 2px solid #6278DF;
+    padding: 9px 27px;
+    border-radius: 9px;
+    font-weight: 600;
+    background: none;
+    color: #6278df;
+    transition: .5s;
+    margin-top: 2px;
+}
+.header-button a:hover{
+    background-color: #6278df;
+    color: #fff;
+    box-shadow: 0px 0px 12px 0 #6278df;
+}
+/*############ drowpdown area end ############*/
+.main-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.main-menu ul li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*############ header area end ############*/
+/*############ banner area start ############*/
+
+.banner {
+    background: url("./img/mbr-4.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 217px 0px 150px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    position: relative;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+}
+.banner h1 {
+    font-size: 57.6px;
+    font-weight: 700;
+    margin: 37px 0;
+}
+.banner h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.dufolt-btn {
+    padding: 20px 34px;
+    margin-right: 36px;
+    display: inline-block;
+    font-size: 20.8px;
+    background-color: #fcfcfc;
+    border-color: 1px solid #fcfcfc;
+    color: #7d7d7d;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: .5s;
+}
+.dufolt-btn:hover{
+    color: #fff;
+    background-color: #6278df;
+}
+/*############ banner area end ############*/
+/*############ banner bottom area start ############*/
+.banner-bottom {
+    background: #F7F9FF;
+    padding: 100px 0;
+}
+.left-area{
+    width: 48%;
+}
+.right-area {
+    width: 48%;
+    margin-left: 20px;
+}
+.banner-bottom h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.banner-bottom p {
+    color: #767676;
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+/*############ banner bottom area end ############*/
+/*############ services area start ############*/
+section.services {
+    background: #fff;
+    padding: 100px 0;
+}
+.services-content h1 {
+    color: #000;
+    font-size: 57.6px;
+    font-weight: 700;
+}
+.services-content p {
+    padding: 24px 0px 48px;
+    color: #767676;
+    font-weight: 300;
+    font-size: 25.6px;
+}
+.services-item{
+    margin-top: 50px;
+}
+.item {
+    width: 31%;
+    box-shadow: 0 -1px 11px 0 #ddd;
+    margin-right: 2.33%;
+    padding: 52px 24px;
+    height: 229px;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+}
+.s-icon{}
+.s-icon span {
+    width: 78px;
+    height: 100px;
+    float: left;
+    font-size: 20px;
+    font-size: 48px;
+    color: #6278df;
+}
+.s-icon span {
+    width: 78px;
+    height: 100px;
+    float: left;
+    font-size: 20px;
+    font-size: 48px;
+    color: #6278df;
+}
+.s-content h2 {
+    color: #000000;
+    font-size: 25.6px;
+    font-weight: 500;
+    line-height: 38.4px;
+}
+.s-content p {
+    color: #767676;
+    padding: 24px 0px 0px;
+    font-weight: 300;
+}
+/*############ services area end ############*/
